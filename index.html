@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Store</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,7 +28,7 @@
             </a>
             <div id="search">
                 <form action="" id="search-form">
-    
+
                     <input type="text" placeholder="Search for product" name="query" />
                     <span id="form-sep"></span>
                     <select name="" id="">
@@ -39,11 +39,13 @@
                         </optgroup>
                     </select>
                     <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
                     </button>
-    
+
                 </form>
             </div>
             <div id="nav-links">
@@ -73,7 +75,8 @@
             <div id="desc-text">
                 <h1>Lowest Prices
                     Best Quality Shopping</h1>
-                <p>Fashion Store has over 50 lakh products in different categories like clothes, cosmetics, and
+                <p class="cursive-font">Fashion Store has over 50 lakh products in different categories like clothes,
+                    cosmetics, and
                     household items. There are over 650+ categories of products to choose from. You can read reviews and
                     user feedback before placing an order. Some of the popular product categories are women's ethnic
                     wear, men's top wear, western wear, accessories, and home essentials. Fashion Store also conducts
@@ -92,18 +95,30 @@
                 <img src="./img/DrawKit-Vector-Illustration-ecommerce-05.png" alt="">
             </div>
         </div>
-        <div class="by-gender" >
+        <div class="by-gender">
             <div id="women" class="gender">
                 <span>Women</span>
                 <img src="./img/DrawKit-Vector-Illustration-ecommerce-06.png" alt="">
             </div>
     </section>
 
-    <section id="featured"></section>
+    <section id="featured">
+        <div id="sec-header">
+            <h1>Featured Section</h1>
+            <div id="feature-links">
+                <nav class="cursive-font">
+                    <a href="/" class="active">Featured</a>
+                    <a href="">Best Seller</a>
+                    <a href="">New Arrivals</a>
+                </nav>
+            </div>
+        </div>
+        <div id="toggle">
+            <div id="sec-cards">
+            </div>
+        </div>
+    </section>
     <section id="new-arrival">
-
-        
-
 
     </section>
 

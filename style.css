@@ -3,6 +3,10 @@
     --primary-color:#9C3D54;
     --primary-color-hover:#e70a42;
 }
+
+.cursive-font{
+    font-family: 'Zen Kurenaido', sans-serif !important; 
+}
 img{
     width: 100%;
 }
@@ -62,6 +66,59 @@ body{
     font-size: 3em;
     color: var(--primary-color);
 }
+
+/* search */
+
+#search {
+    /*  */
+    }
+    #search form{
+        border:1px solid var(--primary-color);
+        background-color: #9c3d5555;
+        border-radius:4px;
+        display:flex;
+        align-items:center;
+    }
+    #form-sep{
+        min-height: 5px;
+        border-left:1px solid rgb(250, 248, 248)!important;
+    }
+    #search form input::placeholder{
+        color: var(--primary-bg);
+    
+    }
+    #search form >*{
+        border:none;
+        display:inline-block;
+        background-color: transparent;
+        padding: 0.8em;
+        color: var(--primary-bg);
+        outline: none;
+        font-size: 1.5em;
+        letter-spacing:1px;
+        font-weight: 400;
+        
+    }
+    #search form select{
+        margin-right:0.5em;
+    
+    }
+    #search form option,
+    #search form optgroup
+    {
+        background-color: var(--primary-color);
+    }
+    #search form button{
+        background-color: var(--primary-color);
+    }
+
+
+
+/* Sec Banner */
+
+
+
+
 #sec-banner #desc{
     display: flex;
     gap: 50px;
@@ -112,18 +169,25 @@ body{
 }
 #sec-category .by-gender{
     /* width: 180px; */
-    display: relative;
     width: 20%;
     border-radius:20%
 }
 #sec-category .by-gender img{
     width: 100%;
+    border-radius: 15px;
+    margin-top: 1em;
+    border:4px solid transparent;
 }
+#sec-category .gender img:hover{
+    border:4px solid var(--primary-color-hover);
+}
+
 
 #sec-category .gender{
     display: flex;
     align-items: center;
     flex-direction:column;
+
 }
 #sec-category .by-gender span{
     font-size:2.5em;
@@ -132,47 +196,119 @@ body{
     letter-spacing: 2px;
 }
 
-/* search */
 
-#search {
-/*  */
-}
-#search form{
-    border:1px solid var(--primary-color);
-    background-color: #9c3d5555;
-    border-radius:4px;
-    display:flex;
-    align-items:center;
-}
-#form-sep{
-    min-height: 5px;
-    border-left:1px solid rgb(250, 248, 248)!important;
-}
-#search form input::placeholder{
-    color: var(--primary-bg);
 
-}
-#search form >*{
-    border:none;
-    display:inline-block;
-    background-color: transparent;
-    padding: 0.8em;
-    color: var(--primary-bg);
-    outline: none;
-    font-size: 1.5em;
+/* Helper */
+#sec-header  a{
+    display: inline-block;
+    color: var(--primary-color);
+    margin: 0 1em;
+    padding-bottom:5px;
+    font-weight: 700;
     letter-spacing:1px;
-    font-weight: 400;
-    
 }
-#search form select{
-    margin-right:0.5em;
+#sec-header .active{
+    color: var(--primary-color-hover)!important;
+    border-bottom: 2px solid var(--primary-color-hover);
+}
+#sec-header #feature-links{
+    margin-top: 1em;
+}
+/* Section featured */
+
+#featured #sec-header  {
+    font-size: 2em;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 5rem;
+}
+#featured #toggle{
+    padding:5em 10em;
+    display: flex;
+    align-items: center;
+}
+
+#featured #toggle::before{
+    content:'\27F5';
+}
+#featured #toggle::before,
+#featured #toggle::after
+{
+    display: inline-block;
+    padding:10px;
+    color: #fff;
+    border-radius:50%;
+    font-size: 36px;
+    background-color:var(--primary-color);
+}
+#featured #toggle::after
+{
+    content:'\27F6';
+}
+
+
+#featured #sec-cards{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+#featured #sec-cards .card:hover{
+    border: 2px solid var(--primary-color-hover);
 
 }
-#search form option,
-#search form optgroup
-{
-    background-color: var(--primary-color);
+#featured #sec-cards .card{
+    width: 20%;
+    border: 2px solid #B1B1B1;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding:1em;
+    border-radius: 5px;
 }
-#search form button{
-    background-color: var(--primary-color);
+#featured #sec-cards .card>span{
+    margin-top:0.3em;
 }
+#featured #sec-cards .card img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+#featured #sec-cards .card .card-title{
+    color: #444444;
+    margin-top:1em;
+}
+
+
+#featured #sec-cards .card .card-meta{
+    display:flex;
+    justify-content:space-between;
+    margin-top:1em;
+}
+#featured #sec-cards .card .card-price::before{
+    content: "\20B9";
+}
+#featured #sec-cards .card .card-price{
+    font-size:1.6em;
+    color: #747474;
+}
+
+
+#featured #sec-cards .card .card-rating::before{
+    content: "\2605";
+    color: rgb(214, 214, 10);
+}
+#featured #sec-cards .card .card-rating{
+    font-size:1.2em;
+    color: #B1B1B1;
+}
+#featured #sec-cards .card .card-rating-count::before{
+    content: "(";
+    margin-left: 5px;
+}
+#featured #sec-cards .card .card-rating-count::after{
+    content: ")";
+}
+
