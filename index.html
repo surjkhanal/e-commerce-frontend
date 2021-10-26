@@ -26,7 +26,26 @@
                 </svg>
                 FASHION STORE
             </a>
-            <div id="search"></div>
+            <div id="search">
+                <form action="" id="search-form">
+    
+                    <input type="text" placeholder="Search for product" name="query" />
+                    <span id="form-sep"></span>
+                    <select name="" id="">
+                        <option disabled selected> Categories</option>
+                        <optgroup label="Search">
+                            <option value="Men">Men</option>
+                            <option value="Women">Women</option>
+                        </optgroup>
+                    </select>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                    </button>
+    
+                </form>
+            </div>
             <div id="nav-links">
                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle"
                         viewBox="0 0 16 16">
@@ -67,13 +86,23 @@
 
     </section>
     <section id="sec-category">
-        <div id="mens"></div>
-        <div id="wommens"></div>
+        <div class="by-gender">
+            <div id="men" class="gender">
+                <span>Men</span>
+                <img src="./img/DrawKit-Vector-Illustration-ecommerce-05.png" alt="">
+            </div>
+        </div>
+        <div class="by-gender" >
+            <div id="women" class="gender">
+                <span>Women</span>
+                <img src="./img/DrawKit-Vector-Illustration-ecommerce-06.png" alt="">
+            </div>
     </section>
 
     <section id="featured"></section>
     <section id="new-arrival">
 
+        
 
 
     </section>

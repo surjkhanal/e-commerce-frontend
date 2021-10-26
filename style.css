@@ -3,6 +3,9 @@
     --primary-color:#9C3D54;
     --primary-color-hover:#e70a42;
 }
+img{
+    width: 100%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +20,7 @@ body{
     /* font-family: 'Zen Kurenaido', sans-serif; */
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 62.5%;
+    height:700vh;
 }
 #sec-banner {
     height: 100vh;
@@ -98,3 +102,77 @@ body{
 
 
 
+/* Section - 2 */
+#sec-category {
+    /* width: 180px; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:50px;
+}
+#sec-category .by-gender{
+    /* width: 180px; */
+    display: relative;
+    width: 20%;
+    border-radius:20%
+}
+#sec-category .by-gender img{
+    width: 100%;
+}
+
+#sec-category .gender{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+}
+#sec-category .by-gender span{
+    font-size:2.5em;
+    color: var(--primary-color);
+    font-weight:700;
+    letter-spacing: 2px;
+}
+
+/* search */
+
+#search {
+/*  */
+}
+#search form{
+    border:1px solid var(--primary-color);
+    background-color: #9c3d5555;
+    border-radius:4px;
+    display:flex;
+    align-items:center;
+}
+#form-sep{
+    min-height: 5px;
+    border-left:1px solid rgb(250, 248, 248)!important;
+}
+#search form input::placeholder{
+    color: var(--primary-bg);
+
+}
+#search form >*{
+    border:none;
+    display:inline-block;
+    background-color: transparent;
+    padding: 0.8em;
+    color: var(--primary-bg);
+    outline: none;
+    font-size: 1.5em;
+    letter-spacing:1px;
+    font-weight: 400;
+    
+}
+#search form select{
+    margin-right:0.5em;
+
+}
+#search form option,
+#search form optgroup
+{
+    background-color: var(--primary-color);
+}
+#search form button{
+    background-color: var(--primary-color);
+}
