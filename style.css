@@ -199,7 +199,7 @@ body{
 
 
 /* Helper */
-#sec-header  a{
+.sec-header  a{
     display: inline-block;
     color: var(--primary-color);
     margin: 0 1em;
@@ -207,33 +207,33 @@ body{
     font-weight: 700;
     letter-spacing:1px;
 }
-#sec-header .active{
+.sec-header .active{
     color: var(--primary-color-hover)!important;
     border-bottom: 2px solid var(--primary-color-hover);
 }
-#sec-header #feature-links{
+.sec-header #feature-links{
     margin-top: 1em;
 }
-/* Section featured */
-
-#featured #sec-header  {
+.sec-header  {
     font-size: 2em;
     display: flex;
     flex-direction:column;
     align-items: center;
     margin-top: 5rem;
 }
-#featured #toggle{
+/* Section featured */
+
+ #toggle{
     padding:5em 10em;
     display: flex;
     align-items: center;
 }
 
-#featured #toggle::before{
+ #toggle::before{
     content:'\27F5';
 }
-#featured #toggle::before,
-#featured #toggle::after
+ #toggle::before,
+ #toggle::after
 {
     display: inline-block;
     padding:10px;
@@ -242,23 +242,23 @@ body{
     font-size: 36px;
     background-color:var(--primary-color);
 }
-#featured #toggle::after
+ #toggle::after
 {
     content:'\27F6';
 }
 
 
-#featured #sec-cards{
+ .sec-cards{
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
     justify-content:center;
 }
-#featured #sec-cards .card:hover{
+ .sec-cards .card:hover{
     border: 2px solid var(--primary-color-hover);
 
 }
-#featured #sec-cards .card{
+ .sec-cards .card{
     width: 20%;
     border: 2px solid #B1B1B1;
     font-size: 1.3em;
@@ -268,47 +268,47 @@ body{
     padding:1em;
     border-radius: 5px;
 }
-#featured #sec-cards .card>span{
+ .sec-cards .card>span{
     margin-top:0.3em;
 }
-#featured #sec-cards .card img{
+ .sec-cards .card img{
     width: 100%;
     height: 100%;
     object-fit:cover;
 }
-#featured #sec-cards .card .card-title{
+ .sec-cards .card .card-title{
     color: #444444;
     margin-top:1em;
 }
 
 
-#featured #sec-cards .card .card-meta{
+ .sec-cards .card .card-meta{
     display:flex;
     justify-content:space-between;
     margin-top:1em;
 }
-#featured #sec-cards .card .card-price::before{
+ .sec-cards .card .card-price::before{
     content: "\20B9";
 }
-#featured #sec-cards .card .card-price{
+ .sec-cards .card .card-price{
     font-size:1.6em;
     color: #747474;
 }
 
 
-#featured #sec-cards .card .card-rating::before{
+ .sec-cards .card .card-rating::before{
     content: "\2605";
     color: rgb(214, 214, 10);
 }
-#featured #sec-cards .card .card-rating{
+ .sec-cards .card .card-rating{
     font-size:1.2em;
     color: #B1B1B1;
 }
-#featured #sec-cards .card .card-rating-count::before{
+ .sec-cards .card .card-rating-count::before{
     content: "(";
     margin-left: 5px;
 }
-#featured #sec-cards .card .card-rating-count::after{
+ .sec-cards .card .card-rating-count::after{
     content: ")";
 }
 

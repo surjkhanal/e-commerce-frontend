@@ -98,6 +98,53 @@ let array = [
     //     }
     // }
 ]
+let array2 = [
+    {
+        "title": "Teeth Whitening Charcoal Activated Carbon Powder",
+        "price": 156,
+        "description": "Product Name : AKilli Teeth Whitening Charcoal Activated Carbon Powder Brand Name : AKilli Product Type : Powder Capacity : 50 gm Product Description : 100% Sustainable and Environmentally Friendly. the product contains compounds of which in volcano ash.which have a high power of absorbing the dirt particles. For a long time charcoal has been known as one of nature's best adsorbing (yes that is spelt correctly) and cleaning agents. With its natural antibacterial antiviral and antifungal component it detoxifies and deodorizes your mouth while balancing pH levels and adsorbing odour. Package Contains : It Has 1 Pack of Charcoal Teeth Whitening Powder Country of Origin : India",
+
+        "category": "men's clothing",
+        "image": "https://images.meesho.com/images/products/2668142/1_512.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },        {
+        "title": "Graceful Deodorant & Fragrances",
+        "price": 228,
+        "description": "Type : Deodorant Brand : Denver Flavour : Heena Add on : Perfume Multipack : 1",
+
+        "category": "men's clothing",
+        "image": "https://images.meesho.com/images/products/57811176/t1svm_512.jpg",
+        "rating": {
+            "rate": 4.1,
+            "count": 85
+        }
+    },        {
+        "title": "Teeth Whitening Charcoal Activated Carbon Powder",
+        "price": 156,
+        "description": "Product Name : AKilli Teeth Whitening Charcoal Activated Carbon Powder Brand Name : AKilli Product Type : Powder Capacity : 50 gm Product Description : 100% Sustainable and Environmentally Friendly. the product contains compounds of which in volcano ash.which have a high power of absorbing the dirt particles. For a long time charcoal has been known as one of nature's best adsorbing (yes that is spelt correctly) and cleaning agents. With its natural antibacterial antiviral and antifungal component it detoxifies and deodorizes your mouth while balancing pH levels and adsorbing odour. Package Contains : It Has 1 Pack of Charcoal Teeth Whitening Powder Country of Origin : India",
+
+        "category": "men's clothing",
+        "image": "https://images.meesho.com/images/products/57645010/gd5bp_512.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },        {
+        "title": "Teeth Whitening Charcoal Activated Carbon Powder",
+        "price": 156,
+        "description": "Product Name : AKilli Teeth Whitening Charcoal Activated Carbon Powder Brand Name : AKilli Product Type : Powder Capacity : 50 gm Product Description : 100% Sustainable and Environmentally Friendly. the product contains compounds of which in volcano ash.which have a high power of absorbing the dirt particles. For a long time charcoal has been known as one of nature's best adsorbing (yes that is spelt correctly) and cleaning agents. With its natural antibacterial antiviral and antifungal component it detoxifies and deodorizes your mouth while balancing pH levels and adsorbing odour. Package Contains : It Has 1 Pack of Charcoal Teeth Whitening Powder Country of Origin : India",
+
+        "category": "men's clothing",
+        "image": "https://images.meesho.com/images/products/57645010/gd5bp_512.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+]
 
 
 
@@ -119,7 +166,11 @@ function createCard(data){
     return newCard;
 }
 
-let cardCollection = document.getElementById('sec-cards');
+let cardCollection = document.getElementById('sec-cards-feature');
 array.forEach(arr=>{
     cardCollection.appendChild(createCard(arr));
+})
+let cardCollection2 = document.getElementById('sec-cards-arrival');
+array2.forEach(arr=>{
+    cardCollection2.appendChild(createCard(arr));
 })
