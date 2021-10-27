@@ -14,7 +14,7 @@ let array = [
         }
     },
     {
-        "title": "Siyaram Trends off shoulder rayon printed midi dress",
+        "title": "Siyaram midi dress",
         "price": 290,
         "description": "Fabric : Rayon Pattern : Printed Combo of : Single Sizes : XL (Bust Size : 42 in) L (Bust Size : 40 in) M (Bust Size : 38 in) XXL (Bust Size : 44 in) Siyaram Trends brings off shoulder midi dress which is comfortable to wear a day long for party as well as casual wear",
 
@@ -38,7 +38,7 @@ let array = [
         }
     },
     {
-        "title": "GSP Basic Jet Black High Rise Skinny Fit Woman's Jean",
+        "title": "GSP Jet Woman's Jean",
         "price": 240,
         "description": "Fabric : Cotton Blend Multipack : 1 Sizes : 34, 36, 28, 30, 32 Skinny Fit High Rise Jet Black Jeans With Soft & stretchable Fabric. Model Wearing Size 30 Height 5'8",
 
@@ -100,7 +100,7 @@ let array = [
 ]
 let array2 = [
     {
-        "title": "Teeth Whitening Charcoal Activated Carbon Powder",
+        "title": "Teeth Whitening Charcoal Activated Carbon",
         "price": 156,
         "description": "Product Name : AKilli Teeth Whitening Charcoal Activated Carbon Powder Brand Name : AKilli Product Type : Powder Capacity : 50 gm Product Description : 100% Sustainable and Environmentally Friendly. the product contains compounds of which in volcano ash.which have a high power of absorbing the dirt particles. For a long time charcoal has been known as one of nature's best adsorbing (yes that is spelt correctly) and cleaning agents. With its natural antibacterial antiviral and antifungal component it detoxifies and deodorizes your mouth while balancing pH levels and adsorbing odour. Package Contains : It Has 1 Pack of Charcoal Teeth Whitening Powder Country of Origin : India",
 
@@ -133,7 +133,7 @@ let array2 = [
             "count": 468
         }
     },        {
-        "title": "ovetta orange foaming face wash with a face brush for deep cleansing 175 ml (pack of 1)",
+        "title": "ovetta orange foaming face wash",
         "price": 123,
         "description": "Product Name : ovetta orange foaming face wash with a face brush for deep cleansing 175 ml {pack of 1} Skin Type : All Skin Types Flavour : Orange Multipack : 1 Concern : No Scars Country of Origin : India",
 

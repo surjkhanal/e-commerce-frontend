@@ -58,6 +58,7 @@ body{
     align-items: center;
     gap:5px;
 }
+
 #sec-banner a svg{
     width: 30px;
 }
@@ -228,24 +229,30 @@ body{
     display: flex;
     align-items: center;
 }
-
- #toggle::before{
+ #toggle .arrow{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+    min-height:40px;
+    min-width:40px;
+    color: var(--primary-color);
+    border-radius:50%;
+    font-size: 24px;
+    background-color:var(--primary-bg);
+    border: 2px solid var(--primary-color);
+}
+ #toggle .left-arrow{
     content:'\27F5';
 }
- #toggle::before,
- #toggle::after
-{
-    display: inline-block;
-    padding:10px;
-    color: #fff;
-    border-radius:50%;
-    font-size: 36px;
-    background-color:var(--primary-color);
-}
- #toggle::after
-{
+ #toggle .right-arrow{
     content:'\27F6';
 }
+ #toggle .arrow:hover{
+    color: var(--primary-bg);
+    background-color:var(--primary-color);
+}
+
 
 
  .sec-cards{
