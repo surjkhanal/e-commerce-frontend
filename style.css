@@ -211,7 +211,7 @@ body{
     color: var(--primary-color-hover)!important;
     border-bottom: 2px solid var(--primary-color-hover);
 }
-.sec-header #feature-links{
+.sec-header .feature-links{
     margin-top: 1em;
 }
 .sec-header  {

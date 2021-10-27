@@ -122,26 +122,26 @@ let array2 = [
             "count": 85
         }
     },        {
-        "title": "Teeth Whitening Charcoal Activated Carbon Powder",
-        "price": 156,
-        "description": "Product Name : AKilli Teeth Whitening Charcoal Activated Carbon Powder Brand Name : AKilli Product Type : Powder Capacity : 50 gm Product Description : 100% Sustainable and Environmentally Friendly. the product contains compounds of which in volcano ash.which have a high power of absorbing the dirt particles. For a long time charcoal has been known as one of nature's best adsorbing (yes that is spelt correctly) and cleaning agents. With its natural antibacterial antiviral and antifungal component it detoxifies and deodorizes your mouth while balancing pH levels and adsorbing odour. Package Contains : It Has 1 Pack of Charcoal Teeth Whitening Powder Country of Origin : India",
+        "title": "Classy Deodorant & Fragrances",
+        "price": 216,
+        "description": "Type : Deodorant Brand : Nivea Flavour : Vitamin-E Multipack : 2 NIVEA DEO 150 ML - FRESH FLOWER , SPORT Country of Origin : India",
 
         "category": "men's clothing",
-        "image": "https://images.meesho.com/images/products/57645010/gd5bp_512.jpg",
+        "image": "https://images.meesho.com/images/products/45916695/vlpxu_512.jpg",
         "rating": {
-            "rate": 3.6,
-            "count": 34
+            "rate": 3.8,
+            "count": 468
         }
     },        {
-        "title": "Teeth Whitening Charcoal Activated Carbon Powder",
-        "price": 156,
-        "description": "Product Name : AKilli Teeth Whitening Charcoal Activated Carbon Powder Brand Name : AKilli Product Type : Powder Capacity : 50 gm Product Description : 100% Sustainable and Environmentally Friendly. the product contains compounds of which in volcano ash.which have a high power of absorbing the dirt particles. For a long time charcoal has been known as one of nature's best adsorbing (yes that is spelt correctly) and cleaning agents. With its natural antibacterial antiviral and antifungal component it detoxifies and deodorizes your mouth while balancing pH levels and adsorbing odour. Package Contains : It Has 1 Pack of Charcoal Teeth Whitening Powder Country of Origin : India",
+        "title": "ovetta orange foaming face wash with a face brush for deep cleansing 175 ml (pack of 1)",
+        "price": 123,
+        "description": "Product Name : ovetta orange foaming face wash with a face brush for deep cleansing 175 ml {pack of 1} Skin Type : All Skin Types Flavour : Orange Multipack : 1 Concern : No Scars Country of Origin : India",
 
         "category": "men's clothing",
-        "image": "https://images.meesho.com/images/products/57645010/gd5bp_512.jpg",
+        "image": "https://images.meesho.com/images/products/58069789/onbpi_512.jpg",
         "rating": {
-            "rate": 3.6,
-            "count": 34
+            "rate": 3.4,
+            "count": 235
         }
     },
 ]
