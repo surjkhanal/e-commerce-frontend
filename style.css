@@ -233,8 +233,8 @@ body{
     align-items: center;
     justify-content: center;
     padding:5px;
-    min-height:40px;
-    min-width:40px;
+    min-height:50px;
+    min-width:50px;
     color: var(--primary-color);
     border-radius:50%;
     font-size: 24px;
