@@ -49,54 +49,54 @@ let array = [
             "count": 21
         }
     },
-    // {
-    //     "title": "Striped Women Jumpsuit",
-    //     "price": 298,
-    //     "description": "Fabric : Poly Crepe Sleeve Length : Short Sleeves Multipack : 1 Sizes : S (Bust Size : 35 in, Length Size: 52 in, Waist Size: 29 in, Hip Size: 38 in) XL (Bust Size : 41 in, Length Size: 53 in, Waist Size: 36 in, Hip Size: 45 in) XS (Bust Size : 33 in, Length Size: 51 in, Waist Size: 27 in, Hip Size: 36 in) L (Bust Size : 40 in, Length Size: 53 in, Waist Size: 34 in, Hip Size: 43 in) M (Bust Size : 38 in, Length Size: 52 in, Waist Size: 31 in, Hip Size: 40 in) This Jumpsuit has Awesome Look as you can see image. Very Satisfied Jumpsuit Ever! Guaranteed !! We are selling Best Quality Products at affordable price. BUY NOW and try it.",
+    {
+        "title": "Striped Women Jumpsuit",
+        "price": 298,
+        "description": "Fabric : Poly Crepe Sleeve Length : Short Sleeves Multipack : 1 Sizes : S (Bust Size : 35 in, Length Size: 52 in, Waist Size: 29 in, Hip Size: 38 in) XL (Bust Size : 41 in, Length Size: 53 in, Waist Size: 36 in, Hip Size: 45 in) XS (Bust Size : 33 in, Length Size: 51 in, Waist Size: 27 in, Hip Size: 36 in) L (Bust Size : 40 in, Length Size: 53 in, Waist Size: 34 in, Hip Size: 43 in) M (Bust Size : 38 in, Length Size: 52 in, Waist Size: 31 in, Hip Size: 40 in) This Jumpsuit has Awesome Look as you can see image. Very Satisfied Jumpsuit Ever! Guaranteed !! We are selling Best Quality Products at affordable price. BUY NOW and try it.",
 
-    //     "category": "men's clothing",
-    //     "image": "https://images.meesho.com/images/products/57968949/esnbo_512.jpg",
-    //     "rating": {
-    //         "rate": 4.3,
-    //         "count": 48
-    //     }
-    // },
-    // {
-    //     "title": "Kurta with chudidaar pajama",
-    //     "price": 325,
-    //     "description": "Top Fabric : Cotton Bottom Fabric : Cotton Scarf Fabric : Cotton Sleeve Length : Long Sleeves Bottom Type : Churidar Pant Stitch Type : Stitched Pattern : Striped Sizes : S (Top Length Size : 42 in, Top Waist Size: 39 in, Bottom Waist Size: 46 in, Bottom Length Size: 43 in) XL (Top Length Size : 44 in, Top Waist Size: 45 in, Bottom Waist Size: 49 in, Bottom Length Size: 43 in) L (Top Length Size : 43 in, Top Waist Size: 42 in, Bottom Waist Size: 48 in, Bottom Length Size: 43 in) XXXL (Top Length Size : 46 in, Top Waist Size: 49 in, Bottom Waist Size: 50 in, Bottom Length Size: 43 in) M (Top Length Size : 43 in, Top Waist Size: 40 in, Bottom Waist Size: 47 in, Bottom Length Size: 43 in) XXL (Top Length Size : 45 in, Top Waist Size: 47 in, Bottom Waist Size: 50 in, Bottom Length Size: 43 in) Tibra Collection as a brand brings you a quality and affordability. We take pride in our commitment to maintain quality standards in each piece manufactured by us . Look your ethnic best wearing this embroidery with zari kurta pajama set for men from the fashion house of Tibra Collection . Made by Dupion silk regular fit kurta pajama set comprises a full-sleeved kurta and churidaar pajama to complete your look . Team this outfit embroidered mojris and rock the party that you attend",
+        "category": "men's clothing",
+        "image": "https://images.meesho.com/images/products/57968949/esnbo_512.jpg",
+        "rating": {
+            "rate": 4.3,
+            "count": 48
+        }
+    },
+    {
+        "title": "Kurta with chudidaar pajama",
+        "price": 325,
+        "description": "Top Fabric : Cotton Bottom Fabric : Cotton Scarf Fabric : Cotton Sleeve Length : Long Sleeves Bottom Type : Churidar Pant Stitch Type : Stitched Pattern : Striped Sizes : S (Top Length Size : 42 in, Top Waist Size: 39 in, Bottom Waist Size: 46 in, Bottom Length Size: 43 in) XL (Top Length Size : 44 in, Top Waist Size: 45 in, Bottom Waist Size: 49 in, Bottom Length Size: 43 in) L (Top Length Size : 43 in, Top Waist Size: 42 in, Bottom Waist Size: 48 in, Bottom Length Size: 43 in) XXXL (Top Length Size : 46 in, Top Waist Size: 49 in, Bottom Waist Size: 50 in, Bottom Length Size: 43 in) M (Top Length Size : 43 in, Top Waist Size: 40 in, Bottom Waist Size: 47 in, Bottom Length Size: 43 in) XXL (Top Length Size : 45 in, Top Waist Size: 47 in, Bottom Waist Size: 50 in, Bottom Length Size: 43 in) Tibra Collection as a brand brings you a quality and affordability. We take pride in our commitment to maintain quality standards in each piece manufactured by us . Look your ethnic best wearing this embroidery with zari kurta pajama set for men from the fashion house of Tibra Collection . Made by Dupion silk regular fit kurta pajama set comprises a full-sleeved kurta and churidaar pajama to complete your look . Team this outfit embroidered mojris and rock the party that you attend",
 
-    //     "category": "men's clothing",
-    //     "image": "https://images.meesho.com/images/products/58005704/3v7uf_512.jpg",
-    //     "rating": {
-    //         "rate": 4.1,
-    //         "count": 294
-    //     }
-    // },
-    // {
-    //     "title": "Ethnic Jackets",
-    //     "price": 788,
-    //     "description": "Fabric : Art Silk Sleeve Length : Sleeveless Pattern : Self-Design Combo of : Single Sizes : S (Chest Size : 36 in, Length Size: 28 in, Waist Size: 34 in, Hip Size: 36 in, Shoulder Size: 17 in) XL (Chest Size : 42 in, Length Size: 29 in, Waist Size: 40 in, Hip Size: 42 in, Shoulder Size: 18 in) L (Chest Size : 40 in, Length Size: 29 in, Waist Size: 37 in, Hip Size: 40 in, Shoulder Size: 18 in) M (Chest Size : 38 in, Length Size: 28 in, Waist Size: 36 in, Hip Size: 38 in, Shoulder Size: 17 in) XXL (Chest Size : 44 in, Length Size: 30 in, Waist Size: 42 in, Hip Size: 44 in, Shoulder Size: 18 in) XXXL (Chest Size : 46 in, Length Size: 30 in, Waist Size: 44 in, Hip Size: 46 in, Shoulder Size: 19 in) Ethinic Jacket Country of Origin : India",
+        "category": "men's clothing",
+        "image": "https://images.meesho.com/images/products/58005704/3v7uf_512.jpg",
+        "rating": {
+            "rate": 4.1,
+            "count": 294
+        }
+    },
+    {
+        "title": "Ethnic Jackets",
+        "price": 788,
+        "description": "Fabric : Art Silk Sleeve Length : Sleeveless Pattern : Self-Design Combo of : Single Sizes : S (Chest Size : 36 in, Length Size: 28 in, Waist Size: 34 in, Hip Size: 36 in, Shoulder Size: 17 in) XL (Chest Size : 42 in, Length Size: 29 in, Waist Size: 40 in, Hip Size: 42 in, Shoulder Size: 18 in) L (Chest Size : 40 in, Length Size: 29 in, Waist Size: 37 in, Hip Size: 40 in, Shoulder Size: 18 in) M (Chest Size : 38 in, Length Size: 28 in, Waist Size: 36 in, Hip Size: 38 in, Shoulder Size: 17 in) XXL (Chest Size : 44 in, Length Size: 30 in, Waist Size: 42 in, Hip Size: 44 in, Shoulder Size: 18 in) XXXL (Chest Size : 46 in, Length Size: 30 in, Waist Size: 44 in, Hip Size: 46 in, Shoulder Size: 19 in) Ethinic Jacket Country of Origin : India",
 
-    //     "category": "men's clothing",
-    //     "image": "https://images.meesho.com/images/products/56939878/uslfd_512.jpg",
-    //     "rating": {
-    //         "rate": 4.8,
-    //         "count": 24
-    //     }
-    // },
-    // {
-    //     "title": "women casual jumpsuit",
-    //     "price": 128,
-    //     "description": "Fabric : Crepe Sleeve Length : Sleeveless Pattern : Solid Multipack : 1 Sizes : S (Bust Size : 36 in, Length Size: 52 in, Waist Size: 28 in) XL (Bust Size : 42 in, Length Size: 52 in, Waist Size: 34 in) L (Bust Size : 40 in, Length Size: 52 in, Waist Size: 32 in) M (Bust Size : 38 in, Length Size: 52 in, Waist Size: 30 in) women casual jumpsuit,fabric poly crepe with side pockect and gyp closer and elatic waist",
+        "category": "men's clothing",
+        "image": "https://images.meesho.com/images/products/56939878/uslfd_512.jpg",
+        "rating": {
+            "rate": 4.8,
+            "count": 24
+        }
+    },
+    {
+        "title": "women casual jumpsuit",
+        "price": 128,
+        "description": "Fabric : Crepe Sleeve Length : Sleeveless Pattern : Solid Multipack : 1 Sizes : S (Bust Size : 36 in, Length Size: 52 in, Waist Size: 28 in) XL (Bust Size : 42 in, Length Size: 52 in, Waist Size: 34 in) L (Bust Size : 40 in, Length Size: 52 in, Waist Size: 32 in) M (Bust Size : 38 in, Length Size: 52 in, Waist Size: 30 in) women casual jumpsuit,fabric poly crepe with side pockect and gyp closer and elatic waist",
 
-    //     "category": "men's clothing",
-    //     "image": "https://images.meesho.com/images/products/57645010/gd5bp_512.jpg",
-    //     "rating": {
-    //         "rate": 3.4,
-    //         "count": 3624
-    //     }
-    // }
+        "category": "men's clothing",
+        "image": "https://images.meesho.com/images/products/57645010/gd5bp_512.jpg",
+        "rating": {
+            "rate": 3.4,
+            "count": 3624
+        }
+    }
 ]
 let array2 = [
     {
@@ -174,3 +174,38 @@ let cardCollection2 = document.getElementById('sec-cards-arrival');
 array2.forEach(arr=>{
     cardCollection2.appendChild(createCard(arr));
 })
+
+function rotateLeft(target){
+    let list = target.getElementsByClassName('card');
+    let x = list[0];
+    list[0].remove();
+    target.appendChild(x)
+}
+function rotateRight(target){
+    let list = target.getElementsByClassName('card');
+    let x = list[list.length - 1];
+    list[list.length - 1].remove();
+    target.insertBefore(x,list[0])
+}
+
+
+let featureBlock = document.getElementById('sec-cards-feature');
+let arrivalBlock = document.getElementById('sec-cards-arrival');
+let featureLeft = document.getElementById('feature-left');
+let featureRight = document.getElementById('feature-right');
+let arrivalLeft = document.getElementById('arrival-left');
+let arrivalRight = document.getElementById('arrival-right');
+
+featureLeft.addEventListener('click', (event) => {
+    rotateRight(featureBlock);
+})
+featureRight.addEventListener('click', (event) => {
+    rotateLeft(featureBlock);
+})
+arrivalLeft.addEventListener('click', (event) => {
+    rotateRight(arrivalBlock);
+})
+arrivalRight.addEventListener('click', (event) => {
+    rotateLeft(arrivalBlock);
+})
+

@@ -264,6 +264,9 @@ body{
     border: 2px solid var(--primary-color-hover);
 
 }
+ .sec-cards .card:nth-child(-n+4){
+    display: flex!important;
+ }
  .sec-cards .card{
     width: 20%;
     border: 2px solid #B1B1B1;
@@ -273,6 +276,7 @@ body{
     justify-content: space-between;
     padding:1em;
     border-radius: 5px;
+    display: none;
 }
  .sec-cards .card>span{
     margin-top:0.3em;
