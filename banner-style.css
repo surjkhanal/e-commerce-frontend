@@ -1,0 +1,119 @@
+#banners{
+    margin-bottom: 10em;
+    background-color: rgb(228, 87, 87);
+    color: white;
+    font-size: 2em;
+    position: relative;
+    /* height:500px; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#banners::after,
+#banners::before{
+    display: inline-block;
+    padding:0.4em;
+    height:12px;
+    width:12px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    font-size: 2em;
+    z-index: 5;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: transparent;
+
+}
+#banners::before{
+    content:'\003C';
+    left: 50px;
+}
+#banners::after{
+    content:'\003E';
+    right: 50px;
+}
+
+#banners .banner {
+    /* position: absolute; */
+    /* top: 0; */
+    padding:2em 4em;
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+#banners .img{
+    padding:2em;
+    background-color: #F0D9FF; 
+    max-width: 30%;
+}
+#banners img{
+    width: 100%;
+    max-width: 100%;
+}
+
+#banners .banner>div{
+    text-align: center;
+}
+
+#banners .banner-subtitle{
+    margin:1em 0;
+}
+
+
+#banners #banner-1 {
+    background-color: #297F87;
+}
+#banners #banner-1 .img{
+    border-radius:30% 70% 70% 30% / 50% 30% 70% 50% ;
+}
+#banners #banner-2 {
+    background-color: #6B7AA1;
+}
+#banners #banner-2 .img{
+    border-radius:55% 67% 96% 25% / 79% 24% 85% 36% ;
+}
+#banners #banner-3 {
+    background-color: #3F3351;
+}
+#banners #banner-3 img{
+    border-radius:50px;
+}
+#banners #banner-3 .img{
+    max-width: 50%!important;
+    background-color: transparent;
+    padding:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner Text */
+#banners .banner-ul-container{
+    width:fit-content;
+    display: inline-block;
+    
+}
+#banners li{
+    list-style:disc;
+    margin-top: 0.2em;
+    margin-left: 2em;
+    text-align: left;
+}
