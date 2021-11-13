@@ -491,6 +491,9 @@ let allProducts = {
     {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/shop01.png","rating": {"rate": 3.6,"count": 34}},
     {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/shop02.png","rating": {"rate": 3.6,"count": 34}},
     {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/shop03.png","rating": {"rate": 3.6,"count": 34}},
+],
+'new':[
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-5.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-6.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-7.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-8.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-9.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-10.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-11.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-12.jpg","rating": {"rate": 3.6,"count": 34}},
 ]
 }
 
@@ -524,6 +527,9 @@ function createCard(data){
 }
 generateAllCard(document.getElementById('sec-cards-feature'),'featured')
 generateAllCard(document.getElementById('sec-cards-arrival'),'new items')
+allProducts['new'].forEach(arr=>{
+    document.getElementById('sec-cards-arrival').appendChild(createCard(arr));
+})
 
 
 
