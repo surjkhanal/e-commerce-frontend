@@ -1,6 +1,5 @@
-
-
-let array = [
+let allProducts = {
+    'featured':[
     {
         "title": "Cotton Tshirts",
         "price": 123,
@@ -97,8 +96,8 @@ let array = [
             "count": 3624
         }
     }
-]
-let array2 = [
+],
+'new items':[
     {
         "title": "Teeth Whitening Charcoal Activated Carbon",
         "price": 156,
@@ -144,15 +143,373 @@ let array2 = [
             "count": 235
         }
     },
+],
+'men':[
+    {
+        "title": "men's clothing",
+        "price": 599,
+        "description": "",
+        "category": "men's clothing",
+        "image": "./img/products/men/product-3.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "men's clothing",
+        "price": 599,
+        "description": "",
+        "category": "men's clothing",
+        "image": "./img/products/men/product-4.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "men's clothing",
+        "price": 599,
+        "description": "",
+        "category": "men's clothing",
+        "image": "./img/products/men/shoes-img3.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+   {
+        "title": "men's clothing",
+        "price": 599,
+        "description": "",
+        "category": "men's clothing",
+        "image": "./img/products/men/shoes-img5.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },{
+        "title": "men's clothing",
+        "price": 599,
+        "description": "",
+        "category": "men's clothing",
+        "image": "./img/products/men/shoes-img6.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },{
+        "title": "men's clothing",
+        "price": 599,
+        "description": "",
+        "category": "men's clothing",
+        "image": "./img/products/men/shoes-img7.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },{
+        "title": "men's clothing",
+        "price": 599,
+        "description": "",
+        "category": "men's clothing",
+        "image": "./img/products/men/shoes-img8.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },{
+        "title": "men's clothing",
+        "price": 599,
+        "description": "",
+        "category": "men's clothing",
+        "image": "./img/products/men/shoes-img9.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    
+
+],
+'women':[
+    {
+        "title": "women's clothing",
+        "price": 599,
+        "description": "",
+        "category": "women's clothing",
+        "image": "./img/products/women/product-01.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "women's clothing",
+        "price": 599,
+        "description": "",
+        "category": "women's clothing",
+        "image": "./img/products/women/product-02.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "women's clothing",
+        "price": 599,
+        "description": "",
+        "category": "women's clothing",
+        "image": "./img/products/women/product-03.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "women's clothing",
+        "price": 599,
+        "description": "",
+        "category": "women's clothing",
+        "image": "./img/products/women/product-05.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "women's clothing",
+        "price": 599,
+        "description": "",
+        "category": "women's clothing",
+        "image": "./img/products/women/product-06.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "women's clothing",
+        "price": 599,
+        "description": "",
+        "category": "women's clothing",
+        "image": "./img/products/women/running-shoes.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "women's clothing",
+        "price": 599,
+        "description": "",
+        "category": "women's clothing",
+        "image": "./img/products/women/shoes-img1.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "women's clothing",
+        "price": 599,
+        "description": "",
+        "category": "women's clothing",
+        "image": "./img/products/women/shoes-img2.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+],
+'home':[
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/img-4.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/img-5.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/img-6.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/img-7.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/img-8.png",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/pro-big-1.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/pro-big-2.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/pro-big-3.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/product1.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/product2.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/product3.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/product4.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/product5.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+    {
+        "title": "Home Decorations",
+        "price": 599,
+        "description": "",
+        "category": "Home Decorations",
+        "image": "./img/products/home/product6.jpg",
+        "rating": {
+            "rate": 3.6,
+            "count": 34
+        }
+    },
+],
+'electronic':[
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product01.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product02.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product03.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product04.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product05.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product06.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product07.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product08.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product09.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/shop01.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/shop02.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/shop03.png","rating": {"rate": 3.6,"count": 34}},
 ]
+}
 
 
+function generateAllCard(target,type){
+    target.innerHTML=''
+    allProducts[type].forEach(arr=>{
+        target.appendChild(createCard(arr));
+    })
+}
 
 function createCard(data){
     let newCard = document.createElement('div');
     newCard.className ='card'
     newCard.innerHTML =`
+    
+    <div class="img">
     <img src="${data.image}" alt="">
+    </div>
     <div class="card-data">
     <h2 class="card-title">${data.title}</h2>
     <div class="card-meta">
@@ -165,15 +522,10 @@ function createCard(data){
 
     return newCard;
 }
+generateAllCard(document.getElementById('sec-cards-feature'),'featured')
+generateAllCard(document.getElementById('sec-cards-arrival'),'new items')
 
-let cardCollection = document.getElementById('sec-cards-feature');
-array.forEach(arr=>{
-    cardCollection.appendChild(createCard(arr));
-})
-let cardCollection2 = document.getElementById('sec-cards-arrival');
-array2.forEach(arr=>{
-    cardCollection2.appendChild(createCard(arr));
-})
+
 
 function rotateLeft(target,type){
     let list = target.getElementsByClassName(type);
@@ -219,4 +571,19 @@ bannerLeft.addEventListener('click', (event) => {
 })
 bannerRight.addEventListener('click', (event) => {
     rotateLeft(bannersBlock,'banner');
+})
+
+let allToggleButtons = document.querySelectorAll('.feature-links button')
+
+console.log(allToggleButtons)
+allToggleButtons.forEach(btn => {
+    btn.addEventListener('click', (event) => {
+        allToggleButtons.forEach(t=>{
+            t.classList.remove('active')
+        })
+        btn.classList.add('active');
+        console.log(btn.dataset.type);
+        generateAllCard(document.getElementById('sec-cards-feature'),btn.dataset.type)
+
+    })
 })
