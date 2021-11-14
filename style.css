@@ -304,6 +304,7 @@ body{
 }
  .sec-cards .card .img{
      max-height: 300px;
+     text-align: center;
  }
  .sec-cards .card img{
     max-width: 100%;

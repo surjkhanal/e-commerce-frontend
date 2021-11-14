@@ -1,0 +1,225 @@
+:root{
+    --primary-bg:#fff;
+    --primary-color:#9C3D54;
+    --primary-color-hover:#e70a42;
+}
+
+.cursive-font{
+    font-family: 'Zen Kurenaido', sans-serif !important; 
+}
+/* img{
+    width: 100%;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+background-color:var(--primary-bg);
+font-family: 'Roboto Condensed', sans-serif;
+}
+.hide{
+    display: none!important;
+}
+#product{
+    margin:1em;
+    padding:2em;
+    display: flex;
+    flex: 1;
+    border-radius:10px;
+    position: fixed;
+    top:0;
+    left:0;
+    margin: 2rem;
+    z-index: 50;
+    background-color: #fff;
+    font-size:16px;
+}
+
+#product #cross::after{
+    content: "\2716";
+    font-size:2rem;
+    color:#999;
+}
+#product #cross{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#product #img{
+    width: 70%;
+    overflow: hidden;
+}
+#product #details{
+    width: 30%;
+    overflow: hidden;
+}
+#product img{
+    object-fit: contain;
+    width: 100%;
+}
+#product #img #bigger{
+    width: fit-content;
+    margin: 0 auto;
+}
+#product #img #bigger img{
+    max-height:400px;
+}
+#product #img #others{
+    max-height:20%;
+    display: flex;
+    gap: 10px;
+    width:fit-content;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+#product #img #others img{
+    max-height:160px;
+    border: 2px solid transparent;
+    object-fit: cover;
+    object-position: top;
+}
+#product #img img{
+    border-radius: 15px;
+}
+#product #img #others img:hover,
+#product #img #others img.img-active{
+    border-color: var(--primary-color-hover)!important;
+}
+
+
+/* Right Side */
+#product #details .money::before {
+    content:'\20B9';
+}
+#product #details .money{
+    margin-right:2px;
+}
+
+#product #details .discount::after {
+    content:'\0025  off';
+}
+#product #details .discount{
+    font-size:1em;
+    color: var(--primary-color-hover);
+}
+#product h2{
+    margin: 0.5em 0;
+    font-weight: 400;
+}
+
+#product #details h1{
+    font-size:2em;
+    color: var(--primary-color);
+}
+#product #details #price{
+    margin-top: 1em;
+}
+#product #details #price #latest{
+    font-size:2em;
+    color: #000;
+    font-weight: 600;
+    letter-spacing:1px;
+}
+#product #details #price #actual{
+    font-size:1.2em;
+    text-decoration: line-through;
+    color: #aaa;
+    font-weight: 500;
+    letter-spacing:1px;
+}
+#product #details #price #info{
+    font-size:0.8em;
+    border: 1px solid #000;
+    border-radius:50%;
+    padding:2px;
+    display:inline-block;
+    height: 20px;
+    width: 20px;
+    text-align:center;
+    margin-left: 5px;
+}
+#product #details #deal::before{
+    content:url('https://img.icons8.com/material-outlined/30/228b22/discount.png');
+    margin-right: 0.5em;
+}
+#product #details #deal{
+    font-size:1.1em;
+    color: #777;
+    margin-top: 0.5em;
+    display: inline-flex;
+    align-items: center;
+}
+#product #size {
+    margin: 2em auto;
+}
+
+#product #size .size-measure {
+    font-size:1.5em;
+    display: inline-block;
+    border-radius:5px 20%;
+    border: 1px solid var(--primary-color);
+    color:var(--primary-color);
+    padding: 0.2em 1em;
+    margin-right: 0.5em;
+}
+#product #size .size-measure:hover,
+#product #size .size-active{
+    color: var(--primary-bg);
+    background-color:var(--primary-color);
+}
+
+
+#product #next{
+    display: inline-flex;
+    gap: 2em;
+    margin:1em 0;
+}
+#product #next .icon{
+    display: inline-flex;
+    align-items: center;
+}
+#product #next .icon svg{
+    width: 30px;
+}
+
+#product #next >div{
+    padding:0.5em 1em;
+    border: 1px solid var(--primary-color);
+    border-radius:10px;
+    display: inline-flex;
+    align-items: center;
+    gap:0.6em;
+    font-size:1.1em;
+    color: var(--primary-color);
+}
+#product #next #buy{
+    color: var(--primary-bg);
+    background-color:var(--primary-color);
+}
+
+#product #next>div:hover{
+    background-color:#E43D40!important;
+    color: #fff;
+    border-color:#E43D40!important;
+}
+
+
+#product #expanded span{
+    color: #555;
+    text-overflow:clip;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    max-height: 200px;
+}
+#product #expanded span::-webkit-scrollbar{
+    width: 2px;
+    background-color: transparent;
+}
+#product #expanded span::-webkit-scrollbar-thumb{
+    background-color:var(--primary-color);
+}

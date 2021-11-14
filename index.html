@@ -9,8 +9,10 @@
         href="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/ffffff/external-bag-ecommerce-vitaliy-gorbachev-lineal-vitaly-gorbachev-1.png" />
     <title>Fashion Store</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="banner-style.css">
     <script src="script.js" defer></script>
+    <script src="icon.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,32 +24,19 @@
 <body>
     <nav class="container" id="navbar">
         <a id="logo" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                <path
-                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-            </svg>
+            <span class="icon icon-logo"></span>
             FASHION STORE
         </a>
 
         <div id="nav-links">
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle"
-                    viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                    <path fill-rule="evenodd"
-                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                </svg>
+            <a href="#">
+                <span class="icon icon-user"></span>
                 My Account</a>
             <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                    <path
-                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                </svg>
+                <span class="icon icon-heart"></span>
             </a>
             <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                    <path
-                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                </svg>
+                <span class="icon icon-cart"></span>
             </a>
         </div>
     </nav>
@@ -128,7 +117,7 @@
                     user feedback before placing an order. Some of the popular product categories are women's ethnic
                     wear, men's top wear, western wear, accessories, and home essentials. Fashion Store also conducts
                     regular quality checks to ensure that you get products of the best quality.</p>
-                <a href="#" id="desc-text-btn">
+                <a href="#featured" id="desc-text-btn">
                     Shop Now
                 </a>
             </div>
@@ -150,11 +139,7 @@
                     </optgroup>
                 </select>
                 <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-search" viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg>
+                    <span class="icon icon-search"></span>
                 </button>
 
             </form>
@@ -189,10 +174,10 @@
             </div>
         </div>
         <div id="toggle">
-            <span id="feature-left" class="left-arrow arrow">&larr;</span>
+            <span id="feature-left" class="left-arrow arrow">&lt;</span>
             <div id="sec-cards-feature" class="sec-cards">
             </div>
-            <span id="feature-right" class="right-arrow arrow">&rarr;</span>
+            <span id="feature-right" class="right-arrow arrow">&gt;</span>
         </div>
     </section>
     <section id="new-arrival">
@@ -200,10 +185,10 @@
             <h1>New Items</h1>
         </div>
         <div id="toggle">
-            <span class="left-arrow arrow" id="arrival-left">&larr;</span>
+            <span class="left-arrow arrow" id="arrival-left">&lt;</span>
             <div class="sec-cards" id="sec-cards-arrival">
             </div>
-            <span class="right-arrow arrow" id="arrival-right">&rarr;</span>
+            <span class="right-arrow arrow" id="arrival-right">&gt;</span>
         </div>
 
     </section>
@@ -299,7 +284,77 @@
             </div>
         </div>
     </footer>
+    <div id="product" class="hide">
+        <span id="cross"></span>
+        <div id="img">
+            <div id="bigger">
+                <img src="./img/products/Modal/product-1.jpg" alt="">
+            </div>
+            <div id="others">
+                <img src="./img/products/Modal/gallery-1.jpg" alt="">
+                <img src="./img/products/Modal/gallery-2.jpg" alt="">
+                <img src="./img/products/Modal/gallery-3.jpg" alt="">
+                <img src="./img/products/Modal/gallery-4.jpg" alt="">
 
+            </div>
+
+        </div>
+        <div id="details">
+            <h1>THE KAIKA Men's Casual Striped Shirt</h1>
+            <div id="price">
+                <span class="money" id="latest">229</span>
+                <span class="money" id="actual">426</span>
+                <span class="discount" id="discount-given">46</span>
+                <span id="info">i</span>
+            </div>
+            <p id="deal">
+                <span class="money">100 </span> discount on 1st order
+            </p>
+            <div id="size">
+                <h2>Select Size</h2>
+                <span class="size-measure size-active">S</span>
+                <span class="size-measure">M</span>
+                <span class="size-measure">L</span>
+            </div>
+            <div id="next">
+                <div id="buy">
+                    <span class="icon icon-cart"></span>
+                    Buy
+                </div>
+                <div id="like">
+                    <span class="icon icon-heart"></span>
+                    Save
+                </div>
+            </div>
+            <div id="expanded">
+                <h2>Product Details</h2>
+                <span>Fabric : Cotton
+
+                    Sleeve Length : Long Sleeves
+
+                    Pattern : Striped
+
+                    Multipack : 1
+
+                    Sizes :
+                    S (Chest Size : 39 in, Length Size: 28.5 in)
+
+                    XL (Chest Size : 45 in, Length Size: 30 in)
+
+                    L (Chest Size : 43 in, Length Size: 29.5 in)
+
+                    M (Chest Size : 41 in, Length Size: 29 in)
+
+                    XXL (Chest Size : 47 in, Length Size: 30.5 in)
+
+                    THE KAIKA Have All Type Of Shirt Like Casual,Striped,Solid,Plain,Checked And Other Designer
+                    Shirt.
+
+
+                </span>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

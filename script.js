@@ -498,19 +498,64 @@ let allProducts = {
 }
 
 
+
 function generateAllCard(target,type){
-    target.innerHTML=''
-    allProducts[type].forEach(arr=>{
-        target.appendChild(createCard(arr));
-    })
+    if(target){
+        target.innerHTML=''
+        allProducts[type].forEach(arr=>{
+            target.appendChild(createCard(arr));
+        })
+    }
+}
+function toggleClass(target,className){
+    target.classList.toggle(className);
+}
+function generateProductPage(target,data){
+    let modal = document.querySelector('#product');
+    target.onclick= (event)=>{
+        toggleClass(modal,'hide');
+        let cross = modal.querySelector('#cross');
+        cross.onclick=()=>{
+            toggleClass(modal,'hide');
+        }
+        let biggerImg = modal.querySelector('#bigger img')
+        biggerImg.src=data.image;
+        let otherImgs =  modal.querySelectorAll('#others img')
+        let activeImg = modal.querySelector('#others img .img-active') ||otherImgs[0]
+        otherImgs.forEach(t=>{
+            t.onclick=(event)=>{
+                biggerImg.src=t.src;
+                activeImg.classList.remove('img-active')
+                activeImg = t;
+                activeImg.classList.add('img-active')
+            }
+
+        })
+        modal.querySelector('#details h1').textContent=data.title;    
+        modal.querySelector('#details #latest').textContent=data.price;
+
+        let sizes = modal.querySelectorAll('#details #size .size-measure')
+        let activeSize = modal.querySelector('.size-active') ||sizes[0];
+
+        console.log(sizes)
+        sizes.forEach(s=>{
+            s.onclick = ()=>{
+                activeSize.classList.remove('size-active')
+                activeSize=s;
+                activeSize.classList.add('size-active')
+            }
+        })
+
+    }
 }
 
 function createCard(data){
     let newCard = document.createElement('div');
+    generateProductPage(newCard,data)
     newCard.className ='card'
     newCard.innerHTML =`
-    
-    <div class="img">
+    <div class="img" " >
+
     <img src="${data.image}" alt="">
     </div>
     <div class="card-data">
@@ -593,3 +638,5 @@ allToggleButtons.forEach(btn => {
 
     })
 })
+
+
