@@ -7,6 +7,9 @@
 .cursive-font{
     font-family: 'Zen Kurenaido', sans-serif !important; 
 }
+.hide{
+    display: none!important;
+}
 /* img{
     width: 100%;
 } */
@@ -31,7 +34,6 @@ body{
     background-color: var(--primary-bg);
 } 
 #navbar{
-    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -39,9 +41,38 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    padding:1em 5em;
     box-shadow: 1px 1px 1px 1px #ccc;
     z-index: 50;
+    position: fixed;
+}
+#navbar #nav-links a{
+    position: relative;
+}
+#navbar .nav-hovered{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    right: 0;
+    background-color:#fff;
+    /* min-width: 100px; */
+    /* width: 200px; */
+}
+#navbar a:hover span.nav-hovered{
+    display:flex!important;
+    color: var(--primary-color);
+    /* transition: 20s; */
+}
+#navbar .nav-hovered span:hover{
+    color:var(--primary-color-hover)!important;
+}
+#navbar .nav-hovered>span{
+    display:inline-block;
+    padding:0.5em 1em ;
+    border-bottom: 1px solid rgb(226, 215, 215);
+    /* width: 250px;*/
+    width:max-content; 
 }
 #navbar #nav-links{
     display: flex;
@@ -61,6 +92,7 @@ body{
     display:flex;
     align-items: center;
     gap:5px;
+    padding:0.6em 0;
 }
 
 #navbar a svg{
@@ -68,8 +100,50 @@ body{
 }
 
 #navbar #logo{
-    font-size: 3em;
+    font-size: 2em;
+    font-weight: bold;
     color: var(--primary-color);
+}
+#navbar .nav-card-preview{
+    display:flex!important;
+    align-items: center;
+}
+#navbar .nav-card-preview img{
+    width: 100px;
+    border-radius: 5px;
+}
+#navbar .nav-card-preview .nav-card-details{
+    padding:1em;
+    color:black;
+    text-align: end;
+}
+#navbar .nav-card-preview .nav-card-title{
+    font-size: 1em;
+}
+#navbar .nav-card-preview .nav-card-price::before{
+    content:'\20B9 ';
+}
+#navbar .nav-card-preview .nav-card-price{
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+#navbar #nav-link-saved-btn:hover span.text {
+    /* display: none; */
+}
+#navbar #nav-link-saved-btn span:hover{
+    color: #fff!important;
+}
+#navbar #nav-link-saved-btn{
+    transition: 1s;
+    display: inline-flex;
+    padding:0.5em ;
+    font-size:1em;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--primary-color);
+    color:var(--primary-bg);
+    gap:25px;
 }
 
 /* search */
@@ -82,46 +156,47 @@ body{
 #search {
     display: inline-block;
     margin-bottom: 5em;
-    }
-    #search form{
-        border:1px solid var(--primary-color);
-        background-color: #9c3d5555;
-        border-radius:4px;
-        display:flex;
-        align-items:center;
-    }
-    #form-sep{
-        min-height: 5px;
-        border-left:1px solid rgb(250, 248, 248)!important;
-    }
-    #search form input::placeholder{
-        color: var(--primary-bg);
+}
+
+#search form{
+    border:1px solid var(--primary-color);
+    background-color: #9c3d5555;
+    border-radius:4px;
+    display:flex;
+    align-items:center;
+}
+#form-sep{
+    min-height: 5px;
+    border-left:1px solid rgb(250, 248, 248)!important;
+}
+#search form input::placeholder{
+    color: var(--primary-bg);
+
+}
+#search form >*{
+    border:none;
+    display:inline-block;
+    background-color: transparent;
+    padding: 0.8em;
+    color: var(--primary-bg);
+    outline: none;
+    font-size: 1.5em;
+    letter-spacing:1px;
+    font-weight: 400;
     
-    }
-    #search form >*{
-        border:none;
-        display:inline-block;
-        background-color: transparent;
-        padding: 0.8em;
-        color: var(--primary-bg);
-        outline: none;
-        font-size: 1.5em;
-        letter-spacing:1px;
-        font-weight: 400;
-        
-    }
-    #search form select{
-        margin-right:0.5em;
-    
-    }
-    #search form option,
-    #search form optgroup
-    {
-        background-color: var(--primary-color);
-    }
-    #search form button{
-        background-color: var(--primary-color);
-    }
+}
+#search form select{
+    margin-right:0.5em;
+
+}
+#search form option,
+#search form optgroup
+{
+    background-color: var(--primary-color);
+}
+#search form button{
+    background-color: var(--primary-color);
+}
 
 
 

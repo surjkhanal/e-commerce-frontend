@@ -539,7 +539,6 @@ function generateProductPage(target,data){
         let sizes = modal.querySelectorAll('#details #size .size-measure')
         let activeSize = modal.querySelector('.size-active') ||sizes[0];
 
-        console.log(sizes)
         sizes.forEach(s=>{
             s.onclick = ()=>{
                 activeSize.classList.remove('size-active')
@@ -615,7 +614,6 @@ arrivalRight.addEventListener('click', (event) => {
 })
 
 let bannersBlock = document.getElementById('banners-conatiner');
-console.log(bannersBlock);
 let bannerLeft = document.getElementById('banner-left-btn');
 let bannerRight = document.getElementById('banner-right-btn');
 
@@ -628,14 +626,12 @@ bannerRight.addEventListener('click', (event) => {
 
 let allToggleButtons = document.querySelectorAll('.feature-links button')
 
-console.log(allToggleButtons)
 allToggleButtons.forEach(btn => {
     btn.addEventListener('click', (event) => {
         allToggleButtons.forEach(t=>{
             t.classList.remove('active')
         })
         btn.classList.add('active');
-        console.log(btn.dataset.type);
         generateAllCard(document.getElementById('sec-cards-feature'),btn.dataset.type)
 
     })
