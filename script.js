@@ -511,17 +511,19 @@ function toggleClass(target,className){
     target.classList.toggle(className);
 }
 function generateProductPage(target,data){
-    let modal = document.querySelector('#product');
+    let modal = document.querySelector('#modal');
     target.onclick= (event)=>{
         toggleClass(modal,'hide');
+        document.body.style.overflow='hidden';
         let cross = modal.querySelector('#cross');
         cross.onclick=()=>{
             toggleClass(modal,'hide');
+            document.body.style.overflow='scroll';
         }
         let biggerImg = modal.querySelector('#bigger img')
         biggerImg.src=data.image;
         let otherImgs =  modal.querySelectorAll('#others img')
-        let activeImg = modal.querySelector('#others img .img-active') ||otherImgs[0]
+        let activeImg = modal.querySelector('#others img.img-active')||otherImgs[0]
         otherImgs.forEach(t=>{
             t.onclick=(event)=>{
                 biggerImg.src=t.src;

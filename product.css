@@ -24,19 +24,26 @@ font-family: 'Roboto Condensed', sans-serif;
 .hide{
     display: none!important;
 }
+#modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(85, 85, 85, 0.712);
+    z-index: 50;
+    overflow: hidden;
+
+}
 #product{
-    margin:1em;
+    margin:2em;
     padding:2em;
     display: flex;
     flex: 1;
     border-radius:10px;
-    position: fixed;
-    top:0;
-    left:0;
-    margin: 2rem;
-    z-index: 50;
     background-color: #fff;
     font-size:16px;
+    position: relative;
 }
 
 #product #cross::after{
