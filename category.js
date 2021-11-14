@@ -54,10 +54,16 @@ function makeCards(arr){
     arr.forEach(key=>{
         let span = document.createElement('span')
         span.innerHTML=`
-        <span class="nav-card-preview"><img src="${key.image}">
+        
+        <span class="nav-card-preview">
+        <span class="nav-card-preview-cross"></span>
+        <img src="${key.image}">
             <div class="nav-card-details">
             <p  class="nav-card-title">${key.title}</p>
             <p class="nav-card-price">${key.price}</p></div></span>`
+            span.querySelector('.nav-card-preview-cross').addEventListener('click', (event)=>{
+            span.remove();
+        })
         target.appendChild(span)
     })
     return target;

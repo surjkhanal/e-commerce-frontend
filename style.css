@@ -80,11 +80,10 @@ body{
     justify-content: space-between;
     gap:20px;
 }
-#navbar a:hover{
-    color:var(--primary-color-hover)!important;
-}
 
-#navbar a,
+
+#navbar >a,
+#navbar #nav-links>a,
 #sec-banner a
 {
     font-size:2em;
@@ -107,6 +106,25 @@ body{
 #navbar .nav-card-preview{
     display:flex!important;
     align-items: center;
+    position: relative;
+}
+
+#navbar .nav-card-preview .nav-card-preview-cross{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#navbar .nav-card-preview .nav-card-preview-cross::before{
+    content: '\2716';
+    font-size: 0.8em;
+    /* border: 1px solid red; */
+    border-radius:50%;
+    color: red;
+    display:inline-block;
+    height: 20px;
+    width: 20px;
+    text-align:center;
+
 }
 #navbar .nav-card-preview img{
     width: 100px;
@@ -127,11 +145,16 @@ body{
     font-size: 1em;
     margin-top: 0.5em;
 }
+
+#navbar a:hover{
+    color:var(--primary-color-hover)!important;
+}
 #navbar #nav-link-saved-btn:hover span.text {
     /* display: none; */
 }
-#navbar #nav-link-saved-btn span:hover{
-    color: #fff!important;
+#navbar #nav-link-saved-btn span:hover,
+#navbar #nav-link-saved-btn:hover{
+    color: #fff !important;
 }
 #navbar #nav-link-saved-btn{
     transition: 1s;
