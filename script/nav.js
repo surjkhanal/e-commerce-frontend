@@ -12,7 +12,7 @@ let checkOut = document.createElement('a')
 checkOut.id='nav-link-saved-btn'
 // checkOut.classList.add('hide');
 checkOut.innerHTML=`<span class="icon icon-cart"></span>
-<span class='text'>Checkout Now</span>`
+<span class=''>Checkout Now</span>`
 
 function makeNavCard(data,crossRemove,from){
     let span = document.createElement('span')

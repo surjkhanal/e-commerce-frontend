@@ -1,0 +1,248 @@
+@media screen and (max-width:800px) and (min-width:451px){
+    body{
+        font-size:50%;
+    }
+    #banners{
+        height:400px;
+        overflow:hidden;
+        
+    }
+    #banners .banner{
+        padding:0;
+        height:100%;
+        gap: 0;
+    }
+    #banners .banner-btn{
+        font-size:1em;
+        padding:12px;
+    }
+    #sec-banner {
+        height:fit-content;
+    }
+    #sec-banner #desc{
+        padding:2em 0;
+        flex-direction: column;
+
+    }
+    #sec-banner #desc>*{
+        width:80%
+
+    }
+    #sec-category .by-gender {
+        width: 40%;
+    }
+    #toggle {
+        padding: 2em;
+        gap: 0px;
+    }
+    .sec-header button {
+        font-size:1em;
+        margin: 0 0.3em;
+    }
+    section .sec-cards{
+        max-height: 400px;
+    }
+    section .sec-cards .card{
+        display: none!important;
+    }
+    section .sec-cards .card:nth-child(-n+2){
+        display: flex!important;
+    }
+    section .sec-cards .card{
+        max-width: 40%;
+    }
+
+    #web-cards{
+        flex-wrap: wrap;
+        margin: 1em 5em;
+    }
+    #web-cards .web-card {
+        width: 40%;
+    }
+
+
+    #web-selection #web-selection-container{
+        flex-direction: column;
+        padding:5em;
+    }
+    #web-selection-container p,
+    #web-selection-container img
+     {
+        width: 100%!important;
+    }
+
+    #modal{
+        font-size:50%;
+    }
+    #modal #product{
+        flex-direction: column;
+        gap: 1em;
+    }
+    #modal #product #img{
+        width: 100%;
+        display: flex;
+        gap: 1em;
+    }
+    #modal #product #bigger{
+        width: 60%;
+    }
+    #modal #product #others{
+        flex-wrap: wrap;
+        width: 40%;
+    }
+    #modal #product #details{
+        width: 100%;
+    }
+    #modal #product #bigger img{
+        max-height: 300px;
+    }
+    #modal #product #others img{
+        max-height: 100px;
+        max-width: 100px;
+    }
+    
+}
+@media screen and (max-width:450px){
+    body{
+        font-size:40%;
+    }
+    #navbar a svg{
+        width: 24px;
+    }
+    #navbar #nav-link-category{
+        order: 5;
+    }
+    #navbar #nav-links a .text{
+        display: none;
+    }
+
+    #banners{
+        height:200px;
+        overflow:hidden;
+        font-size: 1.5em;
+    }
+    #banners .banner{
+        padding:0;
+        height:100%;
+        gap: 0;
+    }
+    #banners .banner-btn{
+        font-size:1em;
+        padding:12px;
+    }
+    #banner-left-btn {
+        left: 10px;
+    }
+    #banner-right-btn {
+        right: 10px;
+    }
+    #sec-banner {
+        height:fit-content;
+    }
+    #sec-banner #desc{
+        padding:2em 0;
+        flex-direction: column;
+
+    }
+    #sec-banner #desc>*{
+        width:80%
+    }
+    #sec-category .by-gender {
+        width: 40%;
+    }
+    #toggle {
+        padding: 2em;
+        gap: 0px;
+    }
+    #toggle .arrow{
+        min-height: 30px;
+        min-width: 30px;
+        font-size: 3em;
+    }
+    .feature-links nav{
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 10px;
+    }
+    .sec-header button {
+        font-size:1em;
+        margin: 0 0.3em;
+    }
+    section .sec-cards{
+        max-height: 200px;
+    }
+    section .sec-cards .card{
+        display: none!important;
+    }
+    section .sec-cards .card:nth-child(-n+2){
+        display: flex!important;
+    }
+    section .sec-cards .card{
+        max-width: 40%;
+    }
+
+    #web-cards{
+        flex-wrap: wrap;
+        margin: 1em 5em;
+    }
+    #web-cards .web-card {
+        width: 40%;
+    }
+
+
+    #web-selection #web-selection-container{
+        flex-direction: column;
+        padding:5em;
+    }
+    #web-selection-container p,
+    #web-selection-container img
+     {
+        width: 100%!important;
+    }
+
+    #modal{
+        font-size:50%;
+    }
+    #modal #product{
+        flex-direction: column;
+        gap: 1em;
+    }
+    #modal #product #img{
+        width: 100%;
+        /* display: flex;
+        gap: 1em; */
+    }
+    #modal #product #bigger{
+        width: 60%;
+    }
+    #modal #product #others{
+        flex-wrap: wrap;
+        justify-content:center;
+        
+    }
+    #modal #product #details{
+        width: 100%;
+    }
+    #modal #product #bigger img{
+        max-height: 300px;
+    }
+    #modal #product #others img{
+        max-height: 100px;
+        max-width: 100px;
+    }
+    footer{
+        padding:2em;
+        font-size: 1.5em;
+    }
+    footer .footer-container{
+        gap:1em;
+    }
+    #footer-category,#footer-links{
+        display: none;
+    }
+    
+}
+
