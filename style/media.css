@@ -109,6 +109,9 @@
     #navbar a svg{
         width: 24px;
     }
+    #navbar #nav-link-category .icon{
+        display:inline-block !important;
+    }
     #navbar #nav-link-category{
         order: 5;
     }
