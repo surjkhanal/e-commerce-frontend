@@ -48,6 +48,20 @@ body{
 #navbar #nav-links a{
     position: relative;
 }
+#navbar .nav-count{
+    font-size: 16px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    right: -5px;
+    bottom: 10px;
+    background-color: var(--primary-color);
+    color: var(--primary-bg);
+    border-radius: 50%;
+    padding:1px;
+}
 #navbar .nav-hovered{
     display: flex;
     flex-direction: column;
@@ -57,10 +71,12 @@ body{
     right: 0;
     background-color:#fff;
     /* min-width: 100px; */
-    /* width: 200px; */
+    /* width:100%; */
+    box-shadow: 1px 5px 5px 0px rgb(0 0 0 / 40%);
 }
 #navbar a:hover span.nav-hovered{
     display:flex!important;
+    /* align-items:flex-end; */
     color: var(--primary-color);
     /* transition: 20s; */
 }
@@ -73,6 +89,8 @@ body{
     border-bottom: 1px solid rgb(226, 215, 215);
     /* width: 250px;*/
     width:max-content; 
+    min-width: 100%;
+
 }
 #navbar #nav-links{
     display: flex;
@@ -91,7 +109,8 @@ body{
     display:flex;
     align-items: center;
     gap:5px;
-    padding:0.6em 0;
+    padding:0.8em 0;
+    position: relative;
 }
 
 #navbar a svg{
@@ -105,8 +124,10 @@ body{
 }
 #navbar .nav-card-preview{
     display:flex!important;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
     position: relative;
+    min-width: 100%;
 }
 
 #navbar .nav-card-preview .nav-card-preview-cross{
@@ -161,7 +182,6 @@ body{
     display: inline-flex;
     padding:0.5em ;
     font-size:1em;
-    width: 100%;
     justify-content: center;
     align-items: center;
     background-color:var(--primary-color);

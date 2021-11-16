@@ -1,5 +1,5 @@
-let allProducts = {
-    'featured':[
+{
+    "featured":[
     {
         "title": "Cotton Tshirts",
         "price": 123,
@@ -97,7 +97,7 @@ let allProducts = {
         }
     }
 ],
-'new items':[
+"new items":[
     {
         "title": "Teeth Whitening Charcoal Activated Carbon",
         "price": 156,
@@ -142,9 +142,9 @@ let allProducts = {
             "rate": 3.4,
             "count": 235
         }
-    },
+    }
 ],
-'men':[
+"men":[
     {
         "title": "men's clothing",
         "price": 599,
@@ -228,11 +228,9 @@ let allProducts = {
             "rate": 3.6,
             "count": 34
         }
-    },
-    
-
+    }    
 ],
-'women':[
+"women":[
     {
         "title": "women's clothing",
         "price": 599,
@@ -320,9 +318,9 @@ let allProducts = {
             "rate": 3.6,
             "count": 34
         }
-    },
+    }
 ],
-'home':[
+"home":[
     {
         "title": "Home Decorations",
         "price": 599,
@@ -476,9 +474,9 @@ let allProducts = {
             "rate": 3.6,
             "count": 34
         }
-    },
+    }
 ],
-'electronic':[
+"electronic":[
     {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product01.png","rating": {"rate": 3.6,"count": 34}},
     {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product02.png","rating": {"rate": 3.6,"count": 34}},
     {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product03.png","rating": {"rate": 3.6,"count": 34}},
@@ -490,151 +488,9 @@ let allProducts = {
     {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/product09.png","rating": {"rate": 3.6,"count": 34}},
     {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/shop01.png","rating": {"rate": 3.6,"count": 34}},
     {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/shop02.png","rating": {"rate": 3.6,"count": 34}},
-    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/shop03.png","rating": {"rate": 3.6,"count": 34}},
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/elect/shop03.png","rating": {"rate": 3.6,"count": 34}}
 ],
-'new':[
-    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-5.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-6.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-7.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-8.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-9.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-10.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-11.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-12.jpg","rating": {"rate": 3.6,"count": 34}},
+"new":[
+    {"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-5.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-6.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-7.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-8.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-9.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-10.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-11.jpg","rating": {"rate": 3.6,"count": 34}},{"title": "Electronic's","price": 599,"description": "","category": "Electronic","image": "./img/products/new/product-12.jpg","rating": {"rate": 3.6,"count": 34}}
 ]
 }
-
-
-
-function generateAllCard(target,type){
-    if(target){
-        target.innerHTML=''
-        allProducts[type].forEach(arr=>{
-            target.appendChild(createCard(arr));
-        })
-    }
-}
-function toggleClass(target,className){
-    target.classList.toggle(className);
-}
-function generateProductPage(target,data){
-    let modal = document.querySelector('#modal');
-    target.onclick= (event)=>{
-        toggleClass(modal,'hide');
-        document.body.style.overflow='hidden';
-        let cross = modal.querySelector('#cross');
-        cross.onclick=()=>{
-            toggleClass(modal,'hide');
-            document.body.style.overflow='scroll';
-        }
-        let biggerImg = modal.querySelector('#bigger img')
-        biggerImg.src=data.image;
-        let otherImgs =  modal.querySelectorAll('#others img')
-        let activeImg = modal.querySelector('#others img.img-active')||otherImgs[0]
-        otherImgs.forEach(t=>{
-            t.onclick=(event)=>{
-                biggerImg.src=t.src;
-                activeImg.classList.remove('img-active')
-                activeImg = t;
-                activeImg.classList.add('img-active')
-            }
-
-        })
-        modal.querySelector('#details h1').textContent=data.title;    
-        modal.querySelector('#details #latest').textContent=data.price;
-
-        let sizes = modal.querySelectorAll('#details #size .size-measure')
-        let activeSize = modal.querySelector('.size-active') ||sizes[0];
-
-        sizes.forEach(s=>{
-            s.onclick = ()=>{
-                activeSize.classList.remove('size-active')
-                activeSize=s;
-                activeSize.classList.add('size-active')
-            }
-        })
-
-    }
-}
-
-function createCard(data){
-    let newCard = document.createElement('div');
-    generateProductPage(newCard,data)
-    newCard.className ='card'
-    newCard.innerHTML =`
-    <div class="img" " >
-
-    <img src="${data.image}" alt="">
-    </div>
-    <div class="card-data">
-    <h2 class="card-title">${data.title}</h2>
-    <div class="card-meta">
-        <span class="card-price">${data.price}</span>
-        <span class="card-rating">${data.rating.rate}
-            <span class="card-rating-count">${data.rating.count}</span>
-        </span>
-    </div>
-    </div>`
-
-    return newCard;
-}
-generateAllCard(document.getElementById('sec-cards-feature'),'featured')
-generateAllCard(document.getElementById('sec-cards-arrival'),'new items')
-allProducts['new'].forEach(arr=>{
-    document.getElementById('sec-cards-arrival').appendChild(createCard(arr));
-})
-
-
-
-function rotateLeft(target,type){
-    let list = target.getElementsByClassName(type);
-    let x = list[0];
-    list[0].remove();
-    target.appendChild(x)
-}
-function rotateRight(target,type){
-    let list = target.getElementsByClassName(type);
-    let x = list[list.length - 1];
-    list[list.length - 1].remove();
-    target.insertBefore(x,list[0])
-}
-
-
-let featureBlock = document.getElementById('sec-cards-feature');
-let arrivalBlock = document.getElementById('sec-cards-arrival');
-let featureLeft = document.getElementById('feature-left');
-let featureRight = document.getElementById('feature-right');
-let arrivalLeft = document.getElementById('arrival-left');
-let arrivalRight = document.getElementById('arrival-right');
-
-featureLeft.addEventListener('click', (event) => {
-    rotateRight(featureBlock,'card');
-})
-featureRight.addEventListener('click', (event) => {
-    rotateLeft(featureBlock,'card');
-})
-arrivalLeft.addEventListener('click', (event) => {
-    rotateRight(arrivalBlock,'card');
-})
-arrivalRight.addEventListener('click', (event) => {
-    rotateLeft(arrivalBlock,'card');
-})
-
-let bannersBlock = document.getElementById('banners-conatiner');
-let bannerLeft = document.getElementById('banner-left-btn');
-let bannerRight = document.getElementById('banner-right-btn');
-
-bannerLeft.addEventListener('click', (event) => {
-    rotateRight(bannersBlock,'banner');
-})
-bannerRight.addEventListener('click', (event) => {
-    rotateLeft(bannersBlock,'banner');
-})
-
-let allToggleButtons = document.querySelectorAll('.feature-links button')
-
-allToggleButtons.forEach(btn => {
-    btn.addEventListener('click', (event) => {
-        allToggleButtons.forEach(t=>{
-            t.classList.remove('active')
-        })
-        btn.classList.add('active');
-        generateAllCard(document.getElementById('sec-cards-feature'),btn.dataset.type)
-
-    })
-})
-
-

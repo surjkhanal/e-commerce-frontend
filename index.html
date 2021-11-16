@@ -8,12 +8,18 @@
     <link rel="shortcut icon"
         href="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/ffffff/external-bag-ecommerce-vitaliy-gorbachev-lineal-vitaly-gorbachev-1.png" />
     <title>Fashion Store</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="banner-style.css">
-    <script src="script.js" defer></script>
-    <script src="category.js" defer></script>
-    <script src="icon.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/product.css">
+    <link rel="stylesheet" href="style/banner-style.css">
+
+    <script type='module' src="script/components.js" defer></script>
+
+    <script type='module' src="script/nav.js" defer></script>
+    <script type='module' src="script/script.js" defer></script>
+
+    <script type='module' src="script/toggle.js" defer></script>
+    <script type='module' src="script/icon.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,7 +28,6 @@
 </head>
 
 <body>
-
     <nav class="container" id="navbar">
         <a id="logo" href="#">
             <span class="icon icon-logo"></span>
@@ -31,81 +36,27 @@
 
         <div id="nav-links">
             <a href="#" id="nav-link-category">
-                Categories
+                Categories <span class="nav-hovered hide"></span>
             </a>
             <a href="#" id="nav-link-user">
                 <span class="icon icon-user"></span>
-                My Account
+                My Account <span class="nav-hovered hide"></span>
             </a>
             <a href="#" id="nav-link-saved">
-                <span class="icon icon-heart"></span>
+                <span class="icon icon-heart"></span> 
+                <span class="nav-hovered hide"></span>
+                <span class="nav-count hide"></span>
             </a>
             <a href="#" id="nav-link-cart">
-                <span class="icon icon-cart"></span>
+                <span class="icon icon-cart"></span> <span class="nav-hovered hide"></span>
+                <span class="nav-count hide"></span>
             </a>
         </div>
     </nav>
     <section id="banners">
         <button id="banner-left-btn" class="banner-btn">&lt;</button>
         <div id="banners-conatiner">
-            <div id="banner-1" class="banner">
-                <div class="banner-left img">
-                    <img src="./img/banner-img/laptop.png" alt="">
-                </div>
-                <div class="banner-right">
-                    <h1 class="banner-title">Best Quality And Affordable Laptop Series</h1>
-                    <h3 class="banner-subtitle">Wide Range Of laptop</h3>
-                    <div class="banner-ul-container">
-                        <ul class="banner-ul">
-                            <li>Top Brand's</li>
-                            <li>Intel Processor's</li>
-                            <li>Ryzen Processor's</li>
-                            <li>Gaming Processor's</li>
-                            <li>Office Processor's</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-            <div id="banner-2" class="banner">
-                <div class="banner-left img">
-                    <img src="./img/banner-img/running-shoes.png" alt="">
-                </div>
-                <div class="banner-right">
-                    <h1 class="banner-title">New Running Shoes</h1>
-                    <h3 class="banner-subtitle">Lorem ipsum dolor sit amet.</h3>
-                    <div class="banner-ul-container">
-                        <ul class="banner-ul">
-                            <li>Top Brand's</li>
-                            <li>Huge Discount</li>
-                            <li>Large Brand's selection</li>
-                            <li>All Type Of Foot Wear</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-            <div id="banner-3" class="banner">
-                <div class="banner-left img">
-                    <img src="https://ii1.pepperfry.com/media/catalog/product/a/l/800x400/alfredo-lhs-two-seater-sofa-with-lounger-and-cushions-in-navy-blue-colour-by-casacraft-alfredo-lhs-t-ushy0z.jpg"
-                        alt="">
-                </div>
-                <div class="banner-right">
-                    <h1 class="banner-title">TRENDS FURNITURE</h1>
-                    <h3 class="banner-subtitle">Lorem ipsum dolor sit amet.</h3>
-                    <div class="banner-ul-container">
-                        <ul class="banner-ul">
-                            <li>Sofas</li>
-                            <li>Seating</li>
-                            <li>Chairs</li>
-                            <li>Tables</li>
-                            <li>Dining & Bar</li>
-                            <li>Beds</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
+            <!-- JS DOM Manipulation -->
         </div>
         <button id="banner-right-btn" class="banner-btn">&gt;</button>
     </section>
@@ -335,20 +286,13 @@
                 <div id="expanded">
                     <h2>Product Details</h2>
                     <span>Fabric : Cotton
-
                         Sleeve Length : Long Sleeves
-
                         Pattern : Striped
-
                         Multipack : 1
-
                         Sizes :
                         S (Chest Size : 39 in, Length Size: 28.5 in)
-
                         XL (Chest Size : 45 in, Length Size: 30 in)
-
                         L (Chest Size : 43 in, Length Size: 29.5 in)
-
                         M (Chest Size : 41 in, Length Size: 29 in)
 
                         XXL (Chest Size : 47 in, Length Size: 30.5 in)
