@@ -1,8 +1,6 @@
 import {updateIcon} from './icon.js'
 export function createCard(data){
     let newCard = document.createElement('div');
-    // 
-    // 
     newCard.className ='card'
     newCard.innerHTML =`
     <div class="img" " >

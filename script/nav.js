@@ -1,3 +1,4 @@
+import {updateIcon} from './icon.js'
 export function makeNavList(parent,arr){
     let target=parent.querySelector('.nav-hovered');
     arr.forEach(key=>{
@@ -7,6 +8,11 @@ export function makeNavList(parent,arr){
     }) 
 }
 
+let checkOut = document.createElement('a')
+checkOut.id='nav-link-saved-btn'
+// checkOut.classList.add('hide');
+checkOut.innerHTML=`<span class="icon icon-cart"></span>
+<span class='text'>Checkout Now</span>`
 
 function makeNavCard(data,crossRemove,from){
     let span = document.createElement('span')
@@ -33,6 +39,10 @@ export function loadNavCards(target,arr,crossRemove,from){
     if(arr.length){
         countBlock.classList.remove('hide')
         countBlock.textContent = arr.length;
+        if(from=='cart'){
+            target.appendChild(checkOut);
+            updateIcon();
+        }
     }
     else{
         countBlock.classList.add('hide')
@@ -40,9 +50,4 @@ export function loadNavCards(target,arr,crossRemove,from){
 }
 
 
-// let checkOut = document.createElement('a')
-// checkOut.id='nav-link-saved-btn'
-// // checkOut.classList.add('hide');
-// checkOut.innerHTML=`<span class="icon icon-cart"></span>
-// <span class='text'>Checkout Now</span>`
 
